@@ -1,0 +1,10 @@
+Iniciar ambiente virtual (venv):
+/backend --> venv\Scripts\activate
+
+Iniciar Flask (Terminal 1):
+/backend --> python watcher.py  #watchdog permite o flask atualizar sempre que um arquivo .py for salvo
+
+Iniciar o Vite (Terminal 2):
+/frontend --> npm run dev
+
+
