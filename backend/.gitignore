@@ -1,0 +1,8 @@
+# Ignora variáveis de ambiente
+.env
+
+# Ignora cache e arquivos do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

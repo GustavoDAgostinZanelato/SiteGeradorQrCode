@@ -19,6 +19,9 @@ function Home(){
 
             const resultado = await response.json();
             console.log(resultado)
+
+            setUrl("") //limpa o que foi digitado no campo após o envio de URL
+
         } catch (error) {
             console.error("Erro:", error)
         }
@@ -31,10 +34,16 @@ function Home(){
             <h1>Gerador de QR Code</h1>
         </div>
         <div>
-            <input placeholder="Digite uma URL" value={url} onChange={handleChange} />
+            <input 
+                placeholder="Digite uma URL" 
+                value={url} 
+                onChange={handleChange} 
+            />
         </div>
         <div>
-            <button onClick={enviarUrlBackend}>Gerar QRCODE</button>
+            <button onClick={enviarUrlBackend}>
+                Gerar QRCODE
+            </button>
         </div>
     </>
    );
